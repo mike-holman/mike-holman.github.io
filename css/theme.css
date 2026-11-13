@@ -1,0 +1,118 @@
+:root {
+    color-scheme: light;
+    --colour-text-muted: #52525b;
+    --colour-surface-subtle: #f4f4f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--colour-heading);
+}
+
+:root[data-theme="light"] {
+    --colour-background: #F8F9FA;
+    --colour-surface: #F1F3F5;
+    --colour-surface-card: #E8ECEF;
+    --colour-surface-hover: #E8ECEF;
+    --colour-surface-subtle: #E9EDF1;
+    --colour-text: #4B5563;
+    --colour-text-secondary: #4B5563;
+    --colour-text-muted: #4B5563;
+    --colour-heading: #16171A;
+}
+
+:root[data-theme="light"] .site-logo-image {
+    color: var(--colour-heading);
+}
+
+.footer-brand .logo {
+    color: var(--colour-heading);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --colour-text: #f3f4f6;
+    --colour-text-secondary: #b0b7c3;
+    --colour-text-muted: #b0b7c3;
+    --colour-heading: #f3f4f6;
+    --colour-accent: #f07845;
+
+    --colour-background: #17191c;
+    --colour-surface: #22262b;
+    --colour-surface-card: #1d2024;
+    --colour-surface-hover: #2e3339;
+    --colour-surface-subtle: #2b3036;
+
+    --colour-border: #424850;
+    --colour-divider: #383e45;
+
+    --colour-primary: #7cb7f0;
+    --colour-primary-hover: #9ccafa;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, .24);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, .3);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, .36);
+}
+
+:root[data-theme="dark"] .body,
+:root[data-theme="dark"] .body-large,
+:root[data-theme="dark"] .body-small {
+    color: var(--colour-text-secondary);
+}
+
+:root[data-theme="dark"] .project-tags .tag {
+    color: #f3f4f6;
+    background: #343a40;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    width: var(--button-height-md);
+    height: var(--button-height-md);
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: var(--colour-text);
+    background: var(--colour-surface);
+    border: 1px solid var(--colour-border);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background: var(--colour-surface-hover);
+}
+
+.theme-toggle:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+}
+
+.theme-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    filter: brightness(0);
+}
+
+:root[data-theme="dark"] .theme-icon {
+    filter: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    body,
+    .site-header,
+    .project-card,
+    .list-item-card,
+    .tag,
+    .btn-secondary,
+    .theme-toggle {
+        transition: background-color var(--duration-fast) ease, border-color var(--duration-fast) ease, color var(--duration-fast) ease;
+    }
+}

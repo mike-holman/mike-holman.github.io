@@ -1,0 +1,215 @@
+.about-hero,
+.about-section {
+    width: 100%;
+}
+
+.about-hero {
+    padding-block: var(--space-8);
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+    gap: var(--space-9);
+    align-items: center;
+}
+
+.about-intro > * {
+    margin: 0;
+}
+
+.about-intro .caption {
+    margin-bottom: var(--space-3);
+}
+
+.about-intro .display {
+    margin-bottom: var(--space-5);
+    font-size: clamp(var(--text-4xl), 5.5vw, var(--text-5xl));
+    line-height: 1.08;
+}
+
+.about-intro .body-large + .body-large {
+    margin-top: var(--space-4);
+}
+
+.about-portrait {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: var(--colour-surface);
+    border: 1px solid var(--colour-border);
+    border-radius: var(--radius-xl);
+}
+
+.about-portrait img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-portrait figcaption {
+    padding: var(--space-3);
+    color: var(--colour-text-secondary);
+    font-size: var(--text-xs);
+    line-height: var(--leading-base);
+}
+
+.about-section {
+    padding-block: var(--space-8);
+}
+
+.about-section-muted {
+    background: var(--colour-surface);
+}
+
+.about-section-heading {
+    max-width: 760px;
+    margin-bottom: var(--space-6);
+}
+
+.about-section-heading > * {
+    margin: 0;
+}
+
+.about-section-heading .caption {
+    margin-bottom: var(--space-3);
+}
+
+.about-page .about-card-index,
+.about-page .about-experience-role {
+    color: #a33610;
+}
+
+:root[data-theme="dark"] .about-page .about-card-index,
+:root[data-theme="dark"] .about-page .about-experience-role {
+    color: #ed6c3b;
+}
+
+.about-card-grid,
+.about-tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.about-card,
+.about-experience-card,
+.about-tool-card {
+    padding: var(--space-5);
+    background: var(--colour-background);
+    border: 1px solid var(--colour-border);
+    border-radius: var(--radius-lg);
+}
+
+.about-tool-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    padding: var(--space-3);
+    margin-bottom: var(--space-4);
+    background: #242424;
+    border-radius: var(--radius-md);
+}
+
+:root[data-theme="dark"] .about-tool-icon {
+    background: #424850;
+}
+
+.about-card-index {
+    display: inline-block;
+    margin-bottom: var(--space-4);
+    color: var(--colour-accent);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+}
+
+.about-card .title-3,
+.about-tool-card .title-3 {
+    margin: 0 0 var(--space-3);
+}
+
+.about-card p,
+.about-tool-card p {
+    margin: 0;
+    color: var(--colour-text-secondary);
+    line-height: 1.7;
+}
+
+.about-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.about-experience-card > * {
+    margin: 0;
+}
+
+.about-experience-role {
+    margin-bottom: var(--space-2);
+    color: var(--colour-accent);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+}
+
+.about-experience-card .title-3 {
+    margin-bottom: var(--space-4);
+}
+
+.about-experience-focus,
+.about-experience-card li {
+    color: var(--colour-text-secondary);
+    line-height: 1.7;
+}
+
+.about-experience-focus {
+    margin-bottom: var(--space-4);
+}
+
+.about-experience-focus strong {
+    color: var(--colour-text);
+}
+
+.about-experience-card ul {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: var(--space-5);
+    margin-block: 0;
+}
+
+@media (max-width: 900px) {
+    .about-hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+        gap: var(--space-6);
+    }
+
+    .about-card-grid,
+    .about-tool-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding-block: var(--space-7);
+    }
+
+    .about-hero-grid,
+    .about-experience-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .about-intro .display {
+        font-size: clamp(var(--text-3xl), 8vw, var(--text-4xl));
+    }
+
+    .about-portrait img {
+        aspect-ratio: 4 / 5;
+    }
+
+    .about-section {
+        padding-block: var(--space-7);
+    }
+}

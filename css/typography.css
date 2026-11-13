@@ -16,7 +16,7 @@ body {
 
 .display {
   font-family: var(--font-heading);
-    max-width: 10ch;
+  max-width: 14ch;
   font-size: var(--text-5xl);
   line-height: var(--leading-5xl);
 
@@ -73,5 +73,5 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  color: var(--colour-text-secondary);
+  color: var(--colour-accent);
 }

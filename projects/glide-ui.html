@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore how Mike Holman designed Glide UI, a configurable television interface framework built for operators, markets and hardware platforms worldwide.">
+    <meta name="author" content="Mike Holman">
+    <title>Glide UI — Mike Holman</title>
+    <link rel="canonical" href="https://mike-holman.github.io/projects/glide-ui.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mike Holman">
+    <meta property="og:title" content="Glide UI — Mike Holman">
+    <meta property="og:description"
+        content="Explore how Mike Holman designed Glide UI, a configurable television interface framework built for operators, markets and hardware platforms worldwide.">
+    <meta property="og:url" content="https://mike-holman.github.io/projects/glide-ui.html">
+    <meta property="og:image" content="https://mike-holman.github.io/assets/images/glide/glide-impact-cignal.jpg">
+    <meta property="og:image:alt" content="Cignal television guide before and after the Glide UI redesign">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Glide UI — Mike Holman">
+    <meta name="twitter:description"
+        content="Explore how Mike Holman designed Glide UI, a configurable television interface framework built for operators, markets and hardware platforms worldwide.">
+    <meta name="twitter:image" content="https://mike-holman.github.io/assets/images/glide/glide-impact-cignal.jpg">
+    <meta name="twitter:image:alt" content="Cignal television guide before and after the Glide UI redesign">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/divider.css">
+    <link rel="stylesheet" href="../css/components/tag.css">
+    <link rel="stylesheet" href="../css/components/card.css">
+    <link rel="stylesheet" href="../css/components/case-study.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" aria-label="Mike Holman home">
+                <svg class="site-logo-image" viewBox="0 0 927 557" aria-hidden="true" focusable="false">
+                    <path
+                        d="M632.718 317.099H662.675C664.34 317.099 666.004 319.636 666.004 321.327L584.454 547.102C582.79 552.175 588.615 558.094 593.608 555.558L750.05 498.057C760.868 493.829 770.022 484.527 774.182 472.689L924.8 53.2726C928.128 43.1255 926.464 31.2871 920.639 22.8311C913.982 13.5296 903.996 8.45598 893.178 8.45598H802.475C788.329 8.45598 775.846 16.912 771.686 30.4415L698.457 230.003C697.625 231.694 696.793 232.539 695.129 232.539H664.34C661.843 232.539 660.179 230.003 661.011 228.311C661.843 223.238 687.64 151.362 709.275 89.6333C716.765 68.4934 713.436 45.6623 700.954 27.9047C688.472 10.1472 667.668 0 646.865 0C518.715 0 296.534 0 211.655 0C190.852 0 171.712 13.5296 165.055 32.9783L0.291423 487.064C-1.37286 492.138 4.45213 497.211 8.61283 495.52L171.712 435.483C183.362 431.255 192.516 421.953 196.677 410.115L282.387 171.656C285.716 162.355 295.701 157.281 304.023 160.664C313.176 164.046 318.169 174.193 314.841 183.495L196.677 513.278C195.012 517.506 200.005 523.425 204.998 521.734L361.44 464.233C373.09 459.159 382.244 450.704 386.405 438.865L482.101 171.656C485.429 162.355 495.415 157.281 504.569 160.664C512.89 164.046 517.883 174.193 514.554 183.495L391.398 526.807C389.733 531.035 395.558 536.954 400.551 535.263L556.994 476.917C568.644 472.689 577.797 463.387 581.958 451.549L629.39 318.79C630.222 317.945 631.054 317.099 632.718 317.099Z"
+                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="main-navigation">
+                <img src="../assets/icons/menu.svg" alt="" aria-hidden="true">
+            </button>
+            <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="../work.html" aria-current="page">Work</a>
+                <a href="../index.html#explorations">Explorations</a>
+                <a href="../about.html">About</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true">
+                <img class="theme-icon" src="../assets/icons/moon.svg" data-dark-src="../assets/icons/moon.svg"
+                    data-light-src="../assets/icons/sun.svg" alt="" aria-hidden="true">
+            </button>
+        </div>
+    </header>
+
+    <main class="page case-study-page">
+        <section class="case-study-hero">
+            <div class="container">
+                <nav class="case-study-breadcrumbs" aria-label="Breadcrumb">
+                    <a href="../work.html">Selected Work</a>
+                    <span aria-hidden="true">/</span>
+                    <span aria-current="page">Glide UI</span>
+                </nav>
+
+                <div class="case-study-heading">
+                    <p class="caption">Television &amp; Media</p>
+                    <h1 class="display">Glide UI</h1>
+                    <p class="body-large">A configurable television user interface framework designed for satellite,
+                        cable and IPTV operators around the world.</p>
+                </div>
+
+                <dl class="case-study-snapshot">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Lead UI/UX Designer</dd>
+                    </div>
+                    <div>
+                        <dt>Platforms</dt>
+                        <dd>Set-top box, companion app</dd>
+                    </div>
+                    <div>
+                        <dt>Responsibilities</dt>
+                        <dd>UX, UI, design system, delivery</dd>
+                    </div>
+                    <div>
+                        <dt>Deliverables</dt>
+                        <dd>Framework, components, documentation</dd>
+                    </div>
+                </dl>
+
+                <figure class="case-study-hero-image">
+                    <img src="../assets/images/glide/glide-wide-case-study.jpg"
+                        alt="Glide UI prototype shown in a television interface design tool">
+                </figure>
+            </div>
+        </section>
+
+        <section class="case-study-section">
+            <div class="container case-study-overview">
+                <div class="case-study-reading">
+                    <p class="caption">Overview</p>
+                    <h2 class="title-2">One flexible platform, built to travel.</h2>
+                    <p>Glide UI was designed as a reusable television platform that could be deployed across multiple
+                        operators and territories. Instead of creating a new interface for every customer, the framework
+                        could be configured, branded and scaled to suit each deployment.</p>
+                    <p>Over time, it grew to support different customers, markets, hardware platforms and languages
+                        while maintaining a consistent foundation.</p>
+                </div>
+                <figure class="case-study-figure case-study-overview-visual">
+                    <img src="../assets/images/glide/glide-overview.jpg"
+                        alt="Glide settings interface open in a visual design and asset tool">
+                </figure>
+            </div>
+        </section>
+
+        <section class="case-study-section case-study-section-muted">
+            <div class="container">
+                <div class="case-study-columns">
+                    <div class="case-study-reading">
+                        <p class="caption">The challenge</p>
+                        <h2 class="title-2">Make bespoke feel simple.</h2>
+                        <p>Operators needed distinctive interfaces, but every deployment had to work within set-top box
+                            constraints. Building each one from scratch increased design and engineering effort, and
+                            made future maintenance harder.</p>
+                        <p>The framework had to accommodate different brands and regions, scale to future projects, and
+                            remain straightforward to use with a remote control.</p>
+                        <figure class="case-study-figure case-study-sketch">
+                            <img src="../assets/images/glide/glide-bespoke.jpg"
+                                alt="Hand-drawn Glide interface sketches exploring focus and navigation">
+                        </figure>
+                    </div>
+                    <div class="case-study-role">
+                        <p class="caption">My role</p>
+                        <h2 class="title-3">From early discovery through delivery</h2>
+                        <ul class="case-study-list">
+                            <li>Gathered customer requirements and produced work estimates</li>
+                            <li>Created wireframes, prototypes and high-fidelity visual designs</li>
+                            <li>Produced UX documentation, feature specifications and optimised assets</li>
+                            <li>Created Java layouts and supported engineering and testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-section">
+            <div class="container">
+                <header class="case-study-section-heading">
+                    <p class="caption">Approach</p>
+                    <h2 class="title-2">A predictable experience, with room to adapt.</h2>
+                </header>
+                <div class="case-study-approach-grid">
+                    <article>
+                        <figure class="case-study-approach-visual">
+                            <img src="../assets/images/glide/glide-information-architecture.jpg"
+                                alt="Hand-drawn television interface wireframes exploring layout and navigation">
+                        </figure>
+                        <span class="case-study-index">01</span>
+                        <h3 class="title-3">Start with the structure</h3>
+                        <p>Each project began with a sitemap and navigation framework. Establishing the structure early
+                            helped expose dead ends and simplify the user journey.</p>
+                    </article>
+                    <article>
+                        <figure class="case-study-approach-visual">
+                            <img src="../assets/images/glide/glide-wireframes.jpg"
+                                alt="Television settings screen with the channel-lock option selected">
+                        </figure>
+                        <span class="case-study-index">02</span>
+                        <h3 class="title-3">Design for the remote</h3>
+                        <p>A panel-based interaction model revealed content progressively from left to right. Keeping
+                            focus visually centred made navigation easier to follow.</p>
+                    </article>
+                    <article>
+                        <figure class="case-study-approach-visual">
+                            <img src="../assets/images/glide/glide-hierarchy.jpg"
+                                alt="Glide interface layout being assembled in a visual design tool">
+                        </figure>
+                        <span class="case-study-index">03</span>
+                        <h3 class="title-3">Keep hierarchy consistent</h3>
+                        <p>Main Menu, Primary Panel, Secondary Panel and Tertiary Panel formed a repeatable structure
+                            across the product.</p>
+                    </article>
+                </div>
+
+                <header class="case-study-section-heading case-study-panel-heading">
+                    <p class="caption">The panel model</p>
+                    <h2 class="title-2">One navigation language, from menu to detail.</h2>
+                    <p class="body-large">The same left-to-right hierarchy carried users from the top-level menu into
+                        increasingly specific choices.</p>
+                </header>
+                <div class="case-study-panel-grid">
+                    <figure class="case-study-figure">
+                        <img src="../assets/images/glide/glide-top-menu.jpg"
+                            alt="Top menu wireframe with the Settings section selected">
+                        <figcaption><span>01</span> Top menu</figcaption>
+                    </figure>
+                    <figure class="case-study-figure">
+                        <img src="../assets/images/glide/glide-primary-panel.jpg"
+                            alt="Primary panel wireframe showing a selected option">
+                        <figcaption><span>02</span> Primary panel</figcaption>
+                    </figure>
+                    <figure class="case-study-figure">
+                        <img src="../assets/images/glide/glide-secondary-panel.jpg"
+                            alt="Secondary panel wireframe expanding a child option">
+                        <figcaption><span>03</span> Secondary panel</figcaption>
+                    </figure>
+                    <figure class="case-study-figure">
+                        <img src="../assets/images/glide/glide-tertiary-panel.jpg"
+                            alt="Tertiary panel wireframe with a focused setting">
+                        <figcaption><span>04</span> Tertiary panel</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-section case-study-section-muted">
+            <div class="container">
+                <header class="case-study-section-heading">
+                    <p class="caption">Design system</p>
+                    <h2 class="title-2">A system teams could use and extend.</h2>
+                    <p class="body-large">The framework needed more than reusable screens. It needed clear guidance for
+                        the people designing, building and adapting each deployment.</p>
+                </header>
+                <div class="case-study-system-grid">
+                    <article>
+                        <figure class="case-study-system-visual">
+                            <img src="../assets/images/glide/glide-colours-cards.jpg"
+                                alt="Glide settings screen showing a highlighted channel-lock option">
+                        </figure>
+                        <h3 class="title-3">Colour &amp; recognition</h3>
+                        <p>Dedicated colours helped distinguish sections and reinforce hierarchy. The system was
+                            captured in a 44-page styling guide for internal teams and customers.</p>
+                    </article>
+                    <article>
+                        <figure class="case-study-system-visual">
+                            <img src="../assets/images/glide/glide-typo-cards.jpg"
+                                alt="Television interface menu wireframe with Settings highlighted">
+                        </figure>
+                        <h3 class="title-3">Typography &amp; language</h3>
+                        <p>Montserrat Light was selected for television readability across HD and SD. Character support
+                            was expanded manually, informing later Arabic language work.</p>
+                    </article>
+                    <article>
+                        <figure class="case-study-system-visual">
+                            <img src="../assets/images/glide/glide-component-library.jpg"
+                                alt="A collection of television interface components and screen patterns">
+                        </figure>
+                        <h3 class="title-3">Reusable components</h3>
+                        <p>The component library covered dialogues, player controls, buttons, prompt text, keyboards,
+                            loading states and volume handling.</p>
+                    </article>
+                    <article>
+                        <figure class="case-study-system-visual">
+                            <img src="../assets/images/glide/glide-specs-cards.jpg"
+                                alt="Glide interface layout being edited in a visual design tool">
+                        </figure>
+                        <h3 class="title-3">Assets &amp; documentation</h3>
+                        <p>A large icon and asset library supported accessibility, regionalisation, broadcast features,
+                            system settings and user controls. Eighteen specification documents supported
+                            implementation, testing and client review.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-section">
+            <div class="container">
+                <header class="case-study-section-heading">
+                    <p class="caption">Key features</p>
+                    <h2 class="title-2">Designed around real platform constraints.</h2>
+                </header>
+                <div class="case-study-feature-grid">
+                    <article class="case-study-feature">
+                        <figure class="case-study-feature-visual">
+                            <img src="../assets/images/glide/glide-primary-panel.jpg"
+                                alt="Glide primary-panel wireframe showing a selected option">
+                            <figcaption>Progressive, left-to-right navigation</figcaption>
+                        </figure>
+                        <div class="case-study-feature-content">
+                            <h3 class="title-3">Panel-based navigation</h3>
+                            <p><strong>Challenge</strong>Large television interfaces can be difficult to explore with a
+                                remote.</p>
+                            <p><strong>Design response</strong>A left-to-right panel structure progressively disclosed
+                                information.</p>
+                            <p class="case-study-feature-outcome"><strong>Outcome</strong>People could move deeper into
+                                content and retain a sense of where they were.</p>
+                        </div>
+                    </article>
+                    <article class="case-study-feature">
+                        <figure class="case-study-feature-visual">
+                            <img src="../assets/images/glide/glide-impact-oqaab.jpg"
+                                alt="Glide interface deployed for Oqaab in Afghanistan">
+                            <figcaption>A market-specific Glide deployment</figcaption>
+                        </figure>
+                        <div class="case-study-feature-content">
+                            <h3 class="title-3">Internationalisation</h3>
+                            <p><strong>Challenge</strong>The platform needed to work across different languages and
+                                regions.</p>
+                            <p><strong>Design response</strong>Flexible layouts, localisation support and right-to-left
+                                considerations were built into the framework.</p>
+                            <p class="case-study-feature-outcome"><strong>Outcome</strong>The interface supported
+                                deployments across multiple international markets.</p>
+                        </div>
+                    </article>
+                    <article class="case-study-feature">
+                        <figure class="case-study-feature-visual">
+                            <img src="../assets/images/glide/glide-workflow.jpg"
+                                alt="Glide interface layout being edited in a visual design tool">
+                            <figcaption>Designing screens in the GUI Generator</figcaption>
+                        </figure>
+                        <div class="case-study-feature-content">
+                            <h3 class="title-3">GUI Generator integration</h3>
+                            <p><strong>Challenge</strong>Implementing and maintaining screens directly in code took
+                                time.</p>
+                            <p><strong>Design response</strong>GUI Generator let designers construct screens visually
+                                while updating Java code automatically.</p>
+                            <p class="case-study-feature-outcome"><strong>Outcome</strong>The workflow improved
+                                collaboration between design and engineering.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-section case-study-ui-showcase">
+            <div class="container">
+                <header class="case-study-section-heading">
+                    <p class="caption">UI gallery</p>
+                    <h2 class="title-2">A closer look at the interface.</h2>
+                </header>
+                <div class="case-study-ui-gallery">
+                    <figure class="case-study-ui-gallery-item">
+                        <img src="../assets/images/glide/glide-gallery-livetvl1.jpg"
+                            alt="UI displaying a live television channel with an overlay showing the programme information"
+                            loading="lazy">
+                    </figure>
+                    <figure class="case-study-ui-gallery-item">
+                        <img src="../assets/images/glide/glide-gallery-guide.jpg"
+                            alt="UI displaying a television guide with channel and programme information"
+                            loading="lazy">
+                    </figure>
+                    <figure class="case-study-ui-gallery-item">
+                        <img src="../assets/images/glide/glide-gallery-infobar.jpg"
+                            alt="UI displaying an information bar with channel and programme information"
+                            loading="lazy">
+                    </figure>
+                    <figure class="case-study-ui-gallery-item">
+                        <img src="../assets/images/glide/glide-gallery-livetvl3.jpg"
+                            alt="UI displaying a live television channel with an overlay showing the programme information"
+                            loading="lazy">
+                    </figure>
+                    <figure class="case-study-ui-gallery-item">
+                        <img src="../assets/images/glide/glide-gallery-keyboard.jpg"
+                            alt="UI displaying a television guide with an on-screen keyboard for text input"
+                            loading="lazy">
+                    </figure>
+                    <figure class="case-study-ui-gallery-item">
+                        <img src="../assets/images/glide/glide-gallery-settingsl1.jpg"
+                            alt="UI displaying a settings screen with the channel-lock option selected"
+                            loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-impact">
+            <div class="container">
+                <header class="case-study-impact-heading">
+                    <p class="caption">Impact</p>
+                    <h2 class="title-2">A reusable foundation for operators worldwide.</h2>
+                    <p>The platform was deployed across multiple operators and territories, and also became a sales and
+                        marketing demonstration tool for prospective customers.</p>
+                </header>
+                <div class="case-study-impact-grid">
+                    <article class="case-study-impact-card">
+                        <img src="../assets/images/glide/glide-impact-cignal.jpg"
+                            alt="Before-and-after comparison of the Cignal television guide">
+                        <div class="case-study-impact-copy">
+                            <p class="case-study-impact-location">Philippines</p>
+                            <h3 class="title-3">Cignal</h3>
+                            <p>We rolled out a unified interface across Cignal's new HD and Hybrid set-top boxes, delivering a consistent viewing experience for the Filipino pay TV market.</p>
+                        </div>
+                    </article>
+                    <article class="case-study-impact-card">
+                        <img src="../assets/images/glide/glide-impact-afn.jpg"
+                            alt="AFN Now welcome screen shown on a television">
+                        <div class="case-study-impact-copy">
+                            <p class="case-study-impact-location">United States</p>
+                            <h3 class="title-3">AFN</h3>
+                            <p>AFN delivers television and radio programming to U.S. service members stationed overseas. This rollout brought the Glide UI and eight new HD video channels to their hardware lineup.</p>
+                        </div>
+                    </article>
+                    <article class="case-study-impact-card">
+                        <img src="../assets/images/glide/glide-impact-dish.jpg"
+                            alt="Dish television guide displaying programme listings">
+                        <div class="case-study-impact-copy">
+                            <p class="case-study-impact-location">Mexico</p>
+                            <h3 class="title-3">Dish</h3>
+                            <p>A tailored interface designed for one of the country's leading pay TV providers, blending satellite and free-to-air terrestrial channels into a seamless viewing experience.</p>
+                        </div>
+                    </article>
+                    <article class="case-study-impact-card">
+                        <img src="../assets/images/glide/glide-impact-oqaab.jpg"
+                            alt="Oqaab television interface showing the live TV menu">
+                        <div class="case-study-impact-copy">
+                            <p class="case-study-impact-location">Afghanistan</p>
+                            <h3 class="title-3">ABS / Oqaab</h3>
+                            <p>Afghanistan's national DTT service. Although the project was cancelled near completion, it provided valuable experience in designing complex right-to-left (RTL) user interfaces.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-section">
+            <div class="container case-study-reading">
+                <p class="caption">Looking back</p>
+                <h2 class="title-2">What I took forward.</h2>
+                <p>Component-based thinking, reusable patterns and strong documentation were central to making the
+                    platform scalable. The work also brought real challenges: adapting to television hardware,
+                    supporting multiple languages and RTL layouts, and balancing consistency with each operator’s brand.
+                </p>
+                <p>If I revisited the project today, I would expand accessibility support, formalise the design system
+                    further, increase usability testing and explore more responsive experiences across devices.</p>
+            </div>
+        </section>
+
+        <section class="case-study-next">
+            <div class="container case-study-next-inner">
+                <div>
+                    <p class="caption">More projects</p>
+                    <h2 class="title-3">Explore the rest of the portfolio</h2>
+                </div>
+                <a class="btn btn-secondary btn-md" href="../work.html">Back to selected work</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p class="logo">Mike Holman</p>
+                <p class="body-small text-muted">&copy; 2026 Mike Holman. Designed with tokens, built with HTML/CSS.</p>
+            </div>
+            <nav class="footer-links" aria-label="Contact and social links">
+                <a href="mailto:contact@mikeholman" aria-label="Email">
+                    <img src="../assets/icons/email.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://linkedin.com/in/mikeholman75" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <img src="../assets/icons/linkedin-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.behance.net/mikeholman" target="_blank" rel="noopener noreferrer"
+                    aria-label="Behance">
+                    <img src="../assets/icons/behance-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.flickr.com/photos/mike_holman/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Flickr">
+                    <img src="../assets/icons/flickr-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.instagram.com/mooey/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <img src="../assets/icons/instagram-icon.svg" alt="" aria-hidden="true">
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

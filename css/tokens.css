@@ -6,6 +6,7 @@
 
    --colour-text: #242424;
    --colour-text-secondary: #616161;
+   --colour-heading: #242424;
 
    --colour-background: #ffffff;
    --colour-surface: #f8f8f8;
@@ -16,6 +17,7 @@
 
    --colour-primary: #0f6cbd;
    --colour-primary-hover: #115ea3;
+   --colour-accent: #c84616;
 
    --colour-success: #107c10;
    --colour-warning: #ffb900;
@@ -75,6 +77,7 @@
    --space-8: 40px;
    --space-9: 48px;
    --space-10: 56px;
+   --space-11: 72px;
 
    /* ==========================
      RADIUS
