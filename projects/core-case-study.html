@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lightweight television user interface framework designed for digital television operators, prioritising simplicity, speed and ease of navigation.">
+    <meta name="author" content="Mike Holman">
+    <title>Core UI — Mike Holman</title>
+    <link rel="canonical" href="https://mike-holman.github.io/projects/core-case-study.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mike Holman">
+    <meta property="og:title" content="Core UI — Mike Holman">
+    <meta property="og:description" content="A lightweight television user interface framework designed for digital television operators, prioritising simplicity, speed and ease of navigation.">
+    <meta property="og:url" content="https://mike-holman.github.io/projects/core-case-study.html">
+    <meta property="og:image" content="https://mike-holman.github.io/assets/images/img_2_big.jpg">
+    <meta property="og:image:alt" content="Core UI project preview">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Core UI — Mike Holman">
+    <meta name="twitter:description" content="A lightweight television user interface framework designed for digital television operators, prioritising simplicity, speed and ease of navigation.">
+    <meta name="twitter:image" content="https://mike-holman.github.io/assets/images/img_2_big.jpg">
+    <meta name="twitter:image:alt" content="Core UI project preview">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/divider.css">
+    <link rel="stylesheet" href="../css/components/tag.css">
+    <link rel="stylesheet" href="../css/components/card.css">
+    <link rel="stylesheet" href="../css/components/case-study.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" aria-label="Mike Holman home">
+                <svg class="site-logo-image" viewBox="0 0 927 557" aria-hidden="true" focusable="false">
+                    <path
+                        d="M632.718 317.099H662.675C664.34 317.099 666.004 319.636 666.004 321.327L584.454 547.102C582.79 552.175 588.615 558.094 593.608 555.558L750.05 498.057C760.868 493.829 770.022 484.527 774.182 472.689L924.8 53.2726C928.128 43.1255 926.464 31.2871 920.639 22.8311C913.982 13.5296 903.996 8.45598 893.178 8.45598H802.475C788.329 8.45598 775.846 16.912 771.686 30.4415L698.457 230.003C697.625 231.694 696.793 232.539 695.129 232.539H664.34C661.843 232.539 660.179 230.003 661.011 228.311C661.843 223.238 687.64 151.362 709.275 89.6333C716.765 68.4934 713.436 45.6623 700.954 27.9047C688.472 10.1472 667.668 0 646.865 0C518.715 0 296.534 0 211.655 0C190.852 0 171.712 13.5296 165.055 32.9783L0.291423 487.064C-1.37286 492.138 4.45213 497.211 8.61283 495.52L171.712 435.483C183.362 431.255 192.516 421.953 196.677 410.115L282.387 171.656C285.716 162.355 295.701 157.281 304.023 160.664C313.176 164.046 318.169 174.193 314.841 183.495L196.677 513.278C195.012 517.506 200.005 523.425 204.998 521.734L361.44 464.233C373.09 459.159 382.244 450.704 386.405 438.865L482.101 171.656C485.429 162.355 495.415 157.281 504.569 160.664C512.89 164.046 517.883 174.193 514.554 183.495L391.398 526.807C389.733 531.035 395.558 536.954 400.551 535.263L556.994 476.917C568.644 472.689 577.797 463.387 581.958 451.549L629.39 318.79C630.222 317.945 631.054 317.099 632.718 317.099Z"
+                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="main-navigation">
+                <img src="../assets/icons/menu.svg" alt="" aria-hidden="true">
+            </button>
+            <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="../work.html" aria-current="page">Work</a>
+                <a href="../index.html#explorations">Explorations</a>
+                <a href="../about.html">About</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true">
+                <img class="theme-icon" src="../assets/icons/moon.svg" data-dark-src="../assets/icons/moon.svg"
+                    data-light-src="../assets/icons/sun.svg" alt="" aria-hidden="true">
+            </button>
+        </div>
+    </header>
+
+    <main class="page case-study-page">
+    <section class="case-study-hero">
+        <div class="container">
+            <nav class="case-study-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../work.html">Selected Work</a><span aria-hidden="true">/</span>
+                <span aria-current="page">Core UI</span>
+            </nav>
+            <div class="case-study-heading">
+                <p class="caption">Television &amp; Broadcast</p>
+                <h1 class="display">Core UI</h1>
+                <p class="body-large">A lightweight television user interface framework designed for digital television operators, prioritising simplicity, speed and ease of navigation.</p>
+            </div>
+            <dl class="case-study-snapshot"><div><dt>Role</dt><dd>Lead UI/UX Designer</dd></div>
+<div><dt>Industry</dt><dd>Television &amp; Broadcast</dd></div>
+<div><dt>Platforms</dt><dd>Set-top Box</dd></div>
+<div><dt>Responsibilities</dt><dd>UX, UI Design, Design System, Specifications, Engineering Support</dd></div>
+<div><dt>Deliverables</dt><dd>UI Framework, Design System, Documentation, Asset Library</dd></div></dl>
+            <figure class="case-study-hero-image">
+                <img src="../assets/images/img_2_big.jpg" alt="Temporary image placeholder for Core UI">
+            </figure>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-overview">
+            <div class="case-study-reading">
+                <p class="caption">Overview</p>
+                <h2 class="title-2">Core UI</h2>
+                <p>Core UI was developed as a lightweight alternative to more feature-rich television platforms. The objective was to create a highly reusable interface that could be customised for multiple operators while remaining visually clean and easy to navigate.</p>
+<p>The project focused on delivering a straightforward user experience optimised for remote-control interaction, fast navigation and broad customer deployment.</p>
+            </div>
+            <figure class="case-study-figure case-study-overview-visual">
+                <img src="../assets/images/img_2_big.jpg" alt="Temporary image placeholder for the Core UI overview">
+            </figure>
+        </div>
+    </section>
+
+    <section class="case-study-section case-study-section-muted">
+        <div class="container">
+            <div class="case-study-columns">
+                <div class="case-study-reading">
+                    <p class="caption">The challenge</p>
+                    <h2 class="title-2">Designing for the real-world context.</h2>
+                    <p>Digital television operators often required modern user interfaces without the complexity and resource requirements of larger platforms.</p>
+<p>The challenge was to create a system that:</p>
+<ul class="case-study-list"><li>Worked efficiently on set-top box hardware</li><li>Supported customer branding</li><li>Reduced implementation effort</li><li>Simplified navigation</li><li>Scaled across multiple operator deployments</li></ul>
+<p>The interface also needed to remain intuitive for users interacting exclusively with a remote control.</p>
+                </div>
+                <div class="case-study-role">
+                    <p class="caption">My role</p>
+                    <h2 class="title-3">From exploration through delivery</h2>
+                    <p>As Lead UI/UX Designer I was responsible for:</p>
+<ul class="case-study-list"><li>Gathering customer requirements</li><li>Wireframing and prototyping</li><li>High-fidelity visual design</li><li>UX documentation</li><li>Functional specifications</li><li>Asset creation and optimisation</li><li>Java layout creation</li><li>Engineering and testing support</li></ul>
+<p>I worked closely with engineering teams throughout delivery to ensure the final experience matched the design intent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-reading">
+            <p class="caption">Understanding The Problem</p><h2 class="title-2">Understanding The Problem</h2>
+            <p>The project explored how television interfaces could be simplified without sacrificing functionality.</p>
+<p>Key considerations included:</p>
+<ul class="case-study-list"><li>Remote-control interaction patterns</li><li>Navigation efficiency</li><li>Visual clarity</li><li>Customer branding flexibility</li><li>Hardware constraints</li><li>Long-term maintainability</li></ul>
+<p>The goal was to reduce complexity while retaining access to the features operators required.</p>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Approach</p><h2 class="title-2">Approach</h2>
+            </header>
+            <div class="case-study-approach-grid">
+<article>
+<span class="case-study-index">01</span>
+<h3 class="title-3">Information Architecture</h3>
+<p>Each project began with a sitemap and navigation structure.</p>
+<p>Producing the architecture early helped identify potential navigation issues and ensured consistency throughout the product.</p>
+</article>
+<article>
+<span class="case-study-index">02</span>
+<h3 class="title-3">Interaction Model</h3>
+<p>The interface adopted an icon-led navigation structure.</p>
+<p>Users accessed major areas of the platform through a horizontal menu system controlled using directional navigation on the remote control.</p>
+</article>
+<article>
+<span class="case-study-index">03</span>
+<h3 class="title-3">Content Hierarchy</h3>
+<p>Focus remained visually consistent throughout the experience.</p>
+<p>Icons eased smoothly into place as users navigated, helping maintain orientation and context.</p>
+</article>
+<article>
+<span class="case-study-index">04</span>
+<h3 class="title-3">Simplicity First</h3>
+<p>A key principle was reducing visual noise and presenting only what users needed at each stage of their journey.</p>
+</article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Design System</p><h2 class="title-2">Design System</h2>
+            </header>
+            <div class="case-study-approach-grid">
+<article>
+<span class="case-study-index">01</span>
+<h3 class="title-3">Colour System</h3>
+<p>Colour was used to communicate status, improve hierarchy and provide feedback to users.</p>
+<p>Colours were documented within a 44-page styling guide distributed to engineering teams and customers.</p>
+</article>
+<article>
+<span class="case-study-index">02</span>
+<h3 class="title-3">Typography</h3>
+<p>Montserrat Light was selected for readability across HD and SD television environments.</p>
+<p>Additional glyphs were manually created to improve character support across languages.</p>
+</article>
+<article>
+<span class="case-study-index">03</span>
+<h3 class="title-3">Components</h3>
+<p>A reusable component library included:</p>
+<ul class="case-study-list"><li>Dialogues</li><li>Player controls</li><li>Loading states</li><li>Volume controls</li><li>Buttons</li><li>Keyboard interfaces</li><li>Prompt messaging</li><li>Logo treatments</li></ul>
+<p>These patterns provided consistency across the product.</p>
+</article>
+<article>
+<span class="case-study-index">04</span>
+<h3 class="title-3">Asset Library</h3>
+<p>A supporting icon library was created covering:</p>
+<ul class="case-study-list"><li>Accessibility features</li><li>Search</li><li>Recording</li><li>Settings</li><li>System functions</li><li>Navigation</li></ul>
+<p>All assets were optimised for use on set-top box hardware.</p>
+</article>
+<article>
+<span class="case-study-index">05</span>
+<h3 class="title-3">Documentation</h3>
+<p>The project included extensive implementation documentation.</p>
+<p>A total of 17 supporting specification documents were produced for engineering, QA and client teams.</p>
+</article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Key features</p><h2 class="title-2">Designed around the experience.</h2>
+            </header>
+            <div class="case-study-feature-grid">
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">Icon-Based Navigation</h3>
+<h4>Problem</h4>
+<p>Traditional television interfaces often relied heavily on nested menu structures.</p>
+<h4>Solution</h4>
+<p>A clean icon-based navigation model provided direct access to major areas of the platform.</p>
+<h4>Outcome</h4>
+<p>Users could move quickly between sections while maintaining awareness of their location.</p>
+</div></article>
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">Infobar Experience</h3>
+<h4>Problem</h4>
+<p>Users needed access to programme information without interrupting viewing.</p>
+<h4>Solution</h4>
+<p>A lightweight information layer surfaced programme details and controls directly on screen.</p>
+<h4>Outcome</h4>
+<p>Information became easier to access without disrupting content consumption.</p>
+</div></article>
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">GUI Generator Integration</h3>
+<h4>Problem</h4>
+<p>Maintaining user interfaces directly in code slowed iteration and increased development effort.</p>
+<h4>Solution</h4>
+<p>GUI Generator enabled designers to build screens visually while automatically updating implementation code.</p>
+<h4>Outcome</h4>
+<p>Improved collaboration between design and engineering while reducing manual effort.</p>
+</div></article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Selected screens</p><h2 class="title-2">A closer look at the experience.</h2>
+            </header>
+            <div class="case-study-approach-grid">
+<article>
+<span class="case-study-index">01</span>
+<h3 class="title-3">Programme Guide</h3>
+<p>A content-focused guide experience balancing browseability and information density.</p>
+</article>
+<article>
+<span class="case-study-index">02</span>
+<h3 class="title-3">Infobar</h3>
+<p>An overlay designed to support content discovery and viewing decisions without disrupting playback.</p>
+</article>
+<article>
+<span class="case-study-index">03</span>
+<h3 class="title-3">First Time Installation</h3>
+<p>A streamlined onboarding flow designed to simplify new device setup.</p>
+</article>
+<article>
+<span class="case-study-index">04</span>
+<h3 class="title-3">Settings</h3>
+<p>A scalable settings framework capable of supporting multiple operator requirements.</p>
+</article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-impact">
+        <div class="container">
+            <header class="case-study-impact-heading">
+                <p class="caption">Impact</p><h2 class="title-2">The impact of the work.</h2>
+                <p>Core UI became a reusable television interface demonstrated and deployed across a wide range of operators and markets.</p>
+<p>The platform was used as both a production-ready UI and a sales demonstration tool. Organisations involved in deployments and demonstrations included:</p>
+<ul class="case-study-list"><li>beIN Sports</li><li>Orange</li><li>MTN</li><li>SKY Cable</li><li>Filbox</li><li>Nexmedia</li><li>Freesat Thailand</li></ul>
+<p>and numerous other operators worldwide.</p>
+<p>One notable deployment supported Nigeria's digital switchover programme through the National Broadcasting Commission, where the platform was expected to be used on over one million set-top boxes.</p>
+            </header>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-reading">
+            <p class="caption">What I Learned</p><h2 class="title-2">What I Learned</h2>
+            <h3>What Worked</h3>
+<ul class="case-study-list"><li>Reusable interface patterns</li><li>Consistent documentation</li><li>Component-based thinking</li><li>Customer flexibility</li></ul>
+<h3>Challenges</h3>
+<ul class="case-study-list"><li>Supporting different customer requirements</li><li>Hardware limitations</li><li>International deployments</li><li>Maintaining simplicity while adding features</li></ul>
+<h3>Looking Back</h3>
+<p>If I revisited the project today I would:</p>
+<ul class="case-study-list"><li>Formalise the design system further</li><li>Increase focus on accessibility</li><li>Introduce user testing earlier</li><li>Expand support for modern multi-device experiences</li></ul>
+        </div>
+    </section>
+
+    <section class="case-study-section case-study-ui-showcase">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Gallery</p><h2 class="title-2">Selected work</h2>
+            </header>
+            <div class="case-study-ui-gallery"><figure class="case-study-ui-gallery-item"><img src="../assets/images/img_2_big.jpg" alt="Temporary image placeholder for Programme Guide" loading="lazy"><figcaption>Programme Guide</figcaption></figure>
+<figure class="case-study-ui-gallery-item"><img src="../assets/images/img_2_big.jpg" alt="Temporary image placeholder for Infobar" loading="lazy"><figcaption>Infobar</figcaption></figure>
+<figure class="case-study-ui-gallery-item"><img src="../assets/images/img_2_big.jpg" alt="Temporary image placeholder for First Time Installation" loading="lazy"><figcaption>First Time Installation</figcaption></figure>
+<figure class="case-study-ui-gallery-item"><img src="../assets/images/img_2_big.jpg" alt="Temporary image placeholder for Settings" loading="lazy"><figcaption>Settings</figcaption></figure></div>
+        </div>
+    </section>
+
+    <section class="case-study-next">
+        <div class="container case-study-next-inner">
+            <div><p class="caption">Next case study</p><h2 class="title-3">Glide UI</h2></div>
+            <a class="btn btn-secondary btn-md" href="glide-ui.html">View next case study</a>
+        </div>
+    </section>
+</main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p class="logo">Mike Holman</p>
+                <p class="body-small text-muted">&copy; 2026 Mike Holman. Designed with tokens, built with HTML/CSS.</p>
+            </div>
+            <nav class="footer-links" aria-label="Contact and social links">
+                <a href="mailto:contact@mikeholman" aria-label="Email">
+                    <img src="../assets/icons/email.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://linkedin.com/in/mikeholman75" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <img src="../assets/icons/linkedin-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.behance.net/mikeholman" target="_blank" rel="noopener noreferrer"
+                    aria-label="Behance">
+                    <img src="../assets/icons/behance-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.flickr.com/photos/mike_holman/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Flickr">
+                    <img src="../assets/icons/flickr-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.instagram.com/mooey/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <img src="../assets/icons/instagram-icon.svg" alt="" aria-hidden="true">
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

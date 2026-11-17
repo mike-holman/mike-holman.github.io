@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A UX concept exploring how broadband speed testing could be transformed from a technical utility into a clear, trustworthy and actionable customer experience.">
+    <meta name="author" content="Mike Holman">
+    <title>Reimagining the Mobile Speed Test — Mike Holman</title>
+    <link rel="canonical" href="https://mike-holman.github.io/projects/reimagining-the-mobile-speed-test.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mike Holman">
+    <meta property="og:title" content="Reimagining the Mobile Speed Test — Mike Holman">
+    <meta property="og:description" content="A UX concept exploring how broadband speed testing could be transformed from a technical utility into a clear, trustworthy and actionable customer experience.">
+    <meta property="og:url" content="https://mike-holman.github.io/projects/reimagining-the-mobile-speed-test.html">
+    <meta property="og:image" content="https://mike-holman.github.io/assets/images/og.jpg">
+    <meta property="og:image:alt" content="Reimagining the Mobile Speed Test project preview">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reimagining the Mobile Speed Test — Mike Holman">
+    <meta name="twitter:description" content="A UX concept exploring how broadband speed testing could be transformed from a technical utility into a clear, trustworthy and actionable customer experience.">
+    <meta name="twitter:image" content="https://mike-holman.github.io/assets/images/og.jpg">
+    <meta name="twitter:image:alt" content="Reimagining the Mobile Speed Test project preview">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/divider.css">
+    <link rel="stylesheet" href="../css/components/tag.css">
+    <link rel="stylesheet" href="../css/components/card.css">
+    <link rel="stylesheet" href="../css/components/case-study.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" aria-label="Mike Holman home">
+                <svg class="site-logo-image" viewBox="0 0 927 557" aria-hidden="true" focusable="false">
+                    <path
+                        d="M632.718 317.099H662.675C664.34 317.099 666.004 319.636 666.004 321.327L584.454 547.102C582.79 552.175 588.615 558.094 593.608 555.558L750.05 498.057C760.868 493.829 770.022 484.527 774.182 472.689L924.8 53.2726C928.128 43.1255 926.464 31.2871 920.639 22.8311C913.982 13.5296 903.996 8.45598 893.178 8.45598H802.475C788.329 8.45598 775.846 16.912 771.686 30.4415L698.457 230.003C697.625 231.694 696.793 232.539 695.129 232.539H664.34C661.843 232.539 660.179 230.003 661.011 228.311C661.843 223.238 687.64 151.362 709.275 89.6333C716.765 68.4934 713.436 45.6623 700.954 27.9047C688.472 10.1472 667.668 0 646.865 0C518.715 0 296.534 0 211.655 0C190.852 0 171.712 13.5296 165.055 32.9783L0.291423 487.064C-1.37286 492.138 4.45213 497.211 8.61283 495.52L171.712 435.483C183.362 431.255 192.516 421.953 196.677 410.115L282.387 171.656C285.716 162.355 295.701 157.281 304.023 160.664C313.176 164.046 318.169 174.193 314.841 183.495L196.677 513.278C195.012 517.506 200.005 523.425 204.998 521.734L361.44 464.233C373.09 459.159 382.244 450.704 386.405 438.865L482.101 171.656C485.429 162.355 495.415 157.281 504.569 160.664C512.89 164.046 517.883 174.193 514.554 183.495L391.398 526.807C389.733 531.035 395.558 536.954 400.551 535.263L556.994 476.917C568.644 472.689 577.797 463.387 581.958 451.549L629.39 318.79C630.222 317.945 631.054 317.099 632.718 317.099Z"
+                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="main-navigation">
+                <img src="../assets/icons/menu.svg" alt="" aria-hidden="true">
+            </button>
+            <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="../work.html" aria-current="page">Work</a>
+                <a href="../index.html#explorations">Explorations</a>
+                <a href="../about.html">About</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true">
+                <img class="theme-icon" src="../assets/icons/moon.svg" data-dark-src="../assets/icons/moon.svg"
+                    data-light-src="../assets/icons/sun.svg" alt="" aria-hidden="true">
+            </button>
+        </div>
+    </header>
+
+    <main class="page case-study-page">
+    <section class="case-study-hero">
+        <div class="container">
+            <nav class="case-study-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../work.html">Selected Work</a><span aria-hidden="true">/</span>
+                <span aria-current="page">Reimagining the Mobile Speed Test</span>
+            </nav>
+            <div class="case-study-heading">
+                <p class="caption">Product Design Concept</p>
+                <h1 class="display">Reimagining the Mobile Speed Test</h1>
+                <p class="body-large">A UX concept exploring how broadband speed testing could be transformed from a technical utility into a clear, trustworthy and actionable customer experience.</p>
+            </div>
+            <dl class="case-study-snapshot"><div><dt>Type</dt><dd>Product Design Concept</dd></div>
+<div><dt>Industry</dt><dd>Telecommunications</dd></div>
+<div><dt>Platform</dt><dd>Mobile Application</dd></div>
+<div><dt>Focus</dt><dd>UX, UI Design, User Research</dd></div>
+<div><dt>Deliverables</dt><dd>Research, User Flows, Wireframes, High Fidelity Concepts</dd></div></dl>
+            <figure class="case-study-hero-image">
+                <img src="../assets/images/og.jpg" alt="Temporary image placeholder for Reimagining the Mobile Speed Test">
+            </figure>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-overview">
+            <div class="case-study-reading">
+                <p class="caption">Overview</p>
+                <h2 class="title-2">Reimagining the Mobile Speed Test</h2>
+                <p>Broadband speed tests are one of the most widely used digital tools in telecommunications, yet many feel overly technical, cluttered or difficult to interpret.</p>
+<p>This project explored how a mobile speed-testing experience could help customers understand not only how fast their connection is, but also what that speed means in practical terms.</p>
+<p>The goal was to create a simple, trustworthy and user-focused experience that balanced customer needs with business objectives.</p>
+            </div>
+            <figure class="case-study-figure case-study-overview-visual">
+                <img src="../assets/images/og.jpg" alt="Temporary image placeholder for the Reimagining the Mobile Speed Test overview">
+            </figure>
+        </div>
+    </section>
+
+    <section class="case-study-section case-study-section-muted">
+        <div class="container">
+            <div class="case-study-columns">
+                <div class="case-study-reading">
+                    <p class="caption">The challenge</p>
+                    <h2 class="title-2">Designing for the real-world context.</h2>
+                    <p>Traditional speed-testing applications often prioritise technical data over usability.</p>
+<p>Many existing solutions suffered from:</p>
+<ul class="case-study-list"><li>Complex information presentation</li><li>Aggressive advertising</li><li>Unclear results</li><li>Permission requests that reduced trust</li><li>Little explanation of what the results actually meant</li></ul>
+<p>The challenge was to turn a technical process into an experience that was useful, approachable and easy to understand.</p>
+                </div>
+                <div class="case-study-role">
+                    <p class="caption">My role</p>
+                    <h2 class="title-3">From exploration through delivery</h2>
+                    <p>I was responsible for the end-to-end concept design including:</p>
+<ul class="case-study-list"><li>Competitive analysis</li><li>User journey design</li><li>Wireframing</li><li>Information architecture</li><li>UI design</li><li>Design system application</li><li>High-fidelity prototyping</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-reading">
+            <p class="caption">Understanding The Problem</p><h2 class="title-2">Understanding The Problem</h2>
+            <p>I began by exploring a range of existing speed-testing products.</p>
+<p>Several themes quickly emerged.</p>
+<h3>Trust</h3>
+<p>Applications asking for extensive device permissions before delivering value felt less trustworthy and potentially intimidating for less technical users.</p>
+<h3>Advertising</h3>
+<p>Many free speed-testing tools relied heavily on advertising, often creating visual clutter or causing accidental interactions.</p>
+<h3>Results Interpretation</h3>
+<p>Most applications explained connection performance poorly.</p>
+<p>Users could see upload and download numbers, but often struggled to understand what those numbers meant in their day-to-day lives.</p>
+<p>These observations became the foundation of the design direction.</p>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Approach</p><h2 class="title-2">Approach</h2>
+            </header>
+            <div class="case-study-approach-grid">
+<article>
+<span class="case-study-index">01</span>
+<h3 class="title-3">Simplify The Core Journey</h3>
+<p>The experience focused on a single primary action:</p>
+<p>Start a speed test.</p>
+<p>Everything else was designed to support that journey.</p>
+</article>
+<article>
+<span class="case-study-index">02</span>
+<h3 class="title-3">Explain Results Clearly</h3>
+<p>Instead of focusing purely on technical metrics, results would be translated into practical outcomes and recommendations.</p>
+</article>
+<article>
+<span class="case-study-index">03</span>
+<h3 class="title-3">Create Trust</h3>
+<p>The interface avoided unnecessary complexity and reduced visual distractions.</p>
+<p>Transparency and clarity became key design principles.</p>
+</article>
+<article>
+<span class="case-study-index">04</span>
+<h3 class="title-3">Add Value Beyond Testing</h3>
+<p>The concept explored opportunities to provide additional support, account services and personalised recommendations after a test had been completed.</p>
+</article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Design System</p><h2 class="title-2">Design System</h2>
+            </header>
+            <div class="case-study-approach-grid">
+<article>
+<span class="case-study-index">01</span>
+<h3 class="title-3">Visual Language</h3>
+<p>The interface adopted a clean and modern visual language inspired by existing broadband and telecommunications experiences.</p>
+</article>
+<article>
+<span class="case-study-index">02</span>
+<h3 class="title-3">Typography</h3>
+<p>A consistent 8-point grid system was used throughout the design.</p>
+<p>Typography was based on Sky Text and selected to remain clear and legible across a variety of device sizes.</p>
+</article>
+<article>
+<span class="case-study-index">03</span>
+<h3 class="title-3">Iconography</h3>
+<p>Icons were used to support navigation and improve scanability while maintaining visual consistency.</p>
+</article>
+<article>
+<span class="case-study-index">04</span>
+<h3 class="title-3">Colour System</h3>
+<p>Colours were derived from existing design guidelines to ensure consistency throughout the experience.</p>
+</article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Key features</p><h2 class="title-2">Designed around the experience.</h2>
+            </header>
+            <div class="case-study-feature-grid">
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">Practical Speed Results</h3>
+<h4>Problem</h4>
+<p>Most speed tests provide measurements but little context.</p>
+<h4>Solution</h4>
+<p>Results were paired with explanations and recommendations to help users understand what their connection could realistically support.</p>
+<h4>Outcome</h4>
+<p>A more useful and accessible interpretation of broadband performance.</p>
+</div></article>
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">Free For Everyone</h3>
+<h4>Problem</h4>
+<p>Speed tests are often treated purely as acquisition tools.</p>
+<h4>Solution</h4>
+<p>The experience was designed to provide genuine value regardless of customer status.</p>
+<p>Enhanced features would be available to account holders without restricting the core experience.</p>
+<h4>Outcome</h4>
+<p>A customer-first experience that remained commercially relevant.</p>
+</div></article>
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">Intelligent Support Pathways</h3>
+<h4>Problem</h4>
+<p>Users experiencing poor performance often don't know what to do next.</p>
+<h4>Solution</h4>
+<p>The concept introduced support journeys allowing users to submit results, access help and investigate potential issues.</p>
+<h4>Outcome</h4>
+<p>Customers are guided towards resolution rather than being left with unexplained data.</p>
+</div></article>
+<article class="case-study-feature"><div class="case-study-feature-content">
+<h3 class="title-3">Network Awareness</h3>
+<h4>Problem</h4>
+<p>Connection speed can be influenced by more than broadband performance alone.</p>
+<h4>Solution</h4>
+<p>The design included network and device information, helping users understand factors affecting results.</p>
+<h4>Outcome</h4>
+<p>Better user understanding and reduced confusion.</p>
+</div></article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-reading">
+            <p class="caption">User Experience Design</p><h2 class="title-2">User Experience Design</h2>
+            <h3>Competitive Analysis</h3>
+<p>Existing products were reviewed to identify strengths, weaknesses and opportunities.</p>
+<h3>User Flows</h3>
+<p>Detailed flows were created covering:</p>
+<ul class="case-study-list"><li>Application launch</li><li>Sign in</li><li>Speed testing</li><li>Results</li><li>Support</li><li>Settings</li></ul>
+<p>These journeys helped validate the overall experience before moving to visual design.</p>
+<h3>Wireframes</h3>
+<p>Wireframes were used to refine hierarchy, navigation and interaction patterns before progressing into high-fidelity concepts.</p>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Selected screens</p><h2 class="title-2">A closer look at the experience.</h2>
+            </header>
+            <div class="case-study-approach-grid">
+<article>
+<span class="case-study-index">01</span>
+<h3 class="title-3">Start Test</h3>
+<p>A focused entry point built around a single primary action.</p>
+</article>
+<article>
+<span class="case-study-index">02</span>
+<h3 class="title-3">Live Results</h3>
+<p>A real-time testing experience showing progress and connection status.</p>
+</article>
+<article>
+<span class="case-study-index">03</span>
+<h3 class="title-3">Network Management</h3>
+<p>Tools for understanding and managing available connections.</p>
+</article>
+<article>
+<span class="case-study-index">04</span>
+<h3 class="title-3">Support &amp; Account Features</h3>
+<p>Enhanced functionality for customers seeking help or personalised recommendations.</p>
+</article>
+</div>
+        </div>
+    </section>
+
+    <section class="case-study-impact">
+        <div class="container">
+            <header class="case-study-impact-heading">
+                <p class="caption">Impact</p><h2 class="title-2">The impact of the work.</h2>
+                <p>Although developed as a design concept, the project demonstrated how a traditionally technical utility could be redesigned around customer understanding and trust.</p>
+<p>The work showcased:</p>
+<ul class="case-study-list"><li>User-centred problem solving</li><li>Research-driven decision making</li><li>Product thinking</li><li>Service design considerations</li><li>End-to-end UX process</li></ul>
+<p>Most importantly, the project reinforced the value of simplifying complex information and presenting it in a way that customers can easily understand and act upon.</p>
+            </header>
+        </div>
+    </section>
+
+    <section class="case-study-section">
+        <div class="container case-study-reading">
+            <p class="caption">What I Learned</p><h2 class="title-2">What I Learned</h2>
+            <h3>What Worked</h3>
+<ul class="case-study-list"><li>Research before design</li><li>Clear user journeys</li><li>Simplified information architecture</li><li>Focusing on customer understanding rather than technical metrics</li></ul>
+<h3>Challenges</h3>
+<ul class="case-study-list"><li>Balancing business goals and customer needs</li><li>Presenting technical information clearly</li><li>Maintaining simplicity while adding value</li></ul>
+<h3>Looking Back</h3>
+<p>If I revisited the project today I would:</p>
+<ul class="case-study-list"><li>Validate assumptions through user testing</li><li>Explore accessibility requirements in greater depth</li><li>Investigate richer diagnostics and support experiences</li><li>Prototype personalised recommendations in more detail</li></ul>
+        </div>
+    </section>
+
+    <section class="case-study-section case-study-ui-showcase">
+        <div class="container">
+            <header class="case-study-section-heading">
+                <p class="caption">Gallery</p><h2 class="title-2">Selected work</h2>
+            </header>
+            <div class="case-study-ui-gallery"><figure class="case-study-ui-gallery-item"><img src="../assets/images/og.jpg" alt="Temporary image placeholder for Competitive Analysis" loading="lazy"><figcaption>Competitive Analysis</figcaption></figure>
+<figure class="case-study-ui-gallery-item"><img src="../assets/images/og.jpg" alt="Temporary image placeholder for User Flows" loading="lazy"><figcaption>User Flows</figcaption></figure>
+<figure class="case-study-ui-gallery-item"><img src="../assets/images/og.jpg" alt="Temporary image placeholder for Wireframes" loading="lazy"><figcaption>Wireframes</figcaption></figure>
+<figure class="case-study-ui-gallery-item"><img src="../assets/images/og.jpg" alt="Temporary image placeholder for Final Designs" loading="lazy"><figcaption>Final Designs</figcaption></figure></div>
+        </div>
+    </section>
+
+    <section class="case-study-next">
+        <div class="container case-study-next-inner">
+            <div><p class="caption">Next case study</p><h2 class="title-3">Orbital Entertainment Experience</h2></div>
+            <a class="btn btn-secondary btn-md" href="orbital-entertainment-experience.html">View next case study</a>
+        </div>
+    </section>
+</main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p class="logo">Mike Holman</p>
+                <p class="body-small text-muted">&copy; 2026 Mike Holman. Designed with tokens, built with HTML/CSS.</p>
+            </div>
+            <nav class="footer-links" aria-label="Contact and social links">
+                <a href="mailto:contact@mikeholman" aria-label="Email">
+                    <img src="../assets/icons/email.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://linkedin.com/in/mikeholman75" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <img src="../assets/icons/linkedin-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.behance.net/mikeholman" target="_blank" rel="noopener noreferrer"
+                    aria-label="Behance">
+                    <img src="../assets/icons/behance-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.flickr.com/photos/mike_holman/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Flickr">
+                    <img src="../assets/icons/flickr-icon.svg" alt="" aria-hidden="true">
+                </a>
+                <a href="https://www.instagram.com/mooey/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <img src="../assets/icons/instagram-icon.svg" alt="" aria-hidden="true">
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -96,6 +96,16 @@
     border-radius: var(--radius-xl);
 }
 
+.case-study-media-placeholder {
+    display: grid;
+    aspect-ratio: 16 / 9;
+    place-items: center;
+    color: var(--colour-text-secondary);
+    background: var(--colour-surface);
+    border: 1px dashed var(--colour-border);
+    border-radius: var(--radius-xl);
+}
+
 .case-study-hero-image figcaption {
     padding-top: var(--space-2);
     color: var(--colour-text-secondary);

@@ -9,7 +9,7 @@
 
 .about-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
     gap: var(--space-9);
     align-items: center;
 }
@@ -60,7 +60,11 @@
     padding-block: var(--space-8);
 }
 
-.about-section-muted {
+.about-tools-section {
+    width: calc(100% + var(--space-4) + var(--space-4));
+    flex-shrink: 0;
+    margin-inline: calc(0px - var(--space-4));
+    padding-inline: var(--space-4);
     background: var(--colour-surface);
 }
 
@@ -77,85 +81,39 @@
     margin-bottom: var(--space-3);
 }
 
-.about-page .about-card-index,
-.about-page .about-experience-role {
-    color: #a33610;
-}
-
-:root[data-theme="dark"] .about-page .about-card-index,
-:root[data-theme="dark"] .about-page .about-experience-role {
-    color: #ed6c3b;
-}
-
-.about-card-grid,
-.about-tool-grid {
+.about-experience-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--space-5);
 }
 
-.about-card,
-.about-experience-card,
-.about-tool-card {
-    padding: var(--space-5);
-    background: var(--colour-background);
-    border: 1px solid var(--colour-border);
-    border-radius: var(--radius-lg);
+.about-experience-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: var(--space-6);
+    padding-block: var(--space-5);
 }
 
-.about-tool-icon {
-    display: block;
-    width: 48px;
-    height: 48px;
-    padding: var(--space-3);
-    margin-bottom: var(--space-4);
-    background: #242424;
-    border-radius: var(--radius-md);
+.about-experience-card + .about-experience-card {
+    border-top: 1px solid var(--colour-divider);
 }
 
-:root[data-theme="dark"] .about-tool-icon {
-    background: #424850;
-}
-
-.about-card-index {
-    display: inline-block;
-    margin-bottom: var(--space-4);
+.about-experience-role,
+.about-principle-index {
     color: var(--colour-accent);
     font-size: var(--text-sm);
     font-weight: var(--weight-semibold);
-}
-
-.about-card .title-3,
-.about-tool-card .title-3 {
-    margin: 0 0 var(--space-3);
-}
-
-.about-card p,
-.about-tool-card p {
-    margin: 0;
-    color: var(--colour-text-secondary);
-    line-height: 1.7;
-}
-
-.about-experience-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--space-5);
-}
-
-.about-experience-card > * {
-    margin: 0;
 }
 
 .about-experience-role {
-    margin-bottom: var(--space-2);
-    color: var(--colour-accent);
-    font-size: var(--text-sm);
-    font-weight: var(--weight-semibold);
+    margin: 0 0 var(--space-2);
 }
 
-.about-experience-card .title-3 {
-    margin-bottom: var(--space-4);
+.about-experience-identity .title-3 {
+    margin: 0;
+}
+
+.about-experience-details {
+    padding-left: var(--space-6);
+    border-left: 1px solid var(--colour-divider);
 }
 
 .about-experience-focus,
@@ -165,7 +123,7 @@
 }
 
 .about-experience-focus {
-    margin-bottom: var(--space-4);
+    margin: 0 0 var(--space-3);
 }
 
 .about-experience-focus strong {
@@ -179,15 +137,121 @@
     margin-block: 0;
 }
 
+.about-principles-grid,
+.about-tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-principle {
+    padding-inline: var(--space-6);
+}
+
+.about-principle:first-child {
+    padding-left: 0;
+}
+
+.about-principle + .about-principle {
+    border-left: 1px solid var(--colour-divider);
+}
+
+.about-principle-index {
+    display: inline-block;
+    margin-bottom: var(--space-3);
+}
+
+.about-principle .title-3 {
+    margin: 0 0 var(--space-3);
+}
+
+.about-principle p,
+.about-tool-card p {
+    margin: 0;
+    color: var(--colour-text-secondary);
+    line-height: 1.7;
+}
+
+.about-tool-card {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    align-content: start;
+    column-gap: var(--space-4);
+    row-gap: var(--space-2);
+    padding-inline: var(--space-6);
+}
+
+.about-tool-card:first-child {
+    padding-left: 0;
+}
+
+.about-tool-card + .about-tool-card {
+    border-left: 1px solid var(--colour-divider);
+}
+
+.about-tool-icon-wrap {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background: var(--colour-surface-hover);
+    border-radius: var(--radius-md);
+}
+
+.about-tool-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+:root[data-theme="light"] .about-tool-icon {
+    filter: brightness(0);
+}
+
+.about-tool-card .title-3 {
+    margin: 0;
+    font-size: var(--text-lg);
+    line-height: var(--leading-lg);
+}
+
+.about-tool-card p {
+    grid-column: 2;
+}
+
 @media (max-width: 900px) {
     .about-hero-grid {
-        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+        grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
         gap: var(--space-6);
     }
 
-    .about-card-grid,
+    .about-principles-grid,
     .about-tool-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-principle,
+    .about-tool-card,
+    .about-principle:first-child,
+    .about-tool-card:first-child {
+        padding: var(--space-5) 0;
+    }
+
+    .about-principle + .about-principle,
+    .about-tool-card + .about-tool-card {
+        border-top: 1px solid var(--colour-divider);
+        border-left: 0;
+    }
+
+    .about-principle:first-child,
+    .about-tool-card:first-child {
+        padding-top: 0;
+    }
+
+    .about-principle:last-child,
+    .about-tool-card:last-child {
+        padding-bottom: 0;
     }
 }
 
@@ -197,7 +261,7 @@
     }
 
     .about-hero-grid,
-    .about-experience-grid {
+    .about-experience-card {
         grid-template-columns: minmax(0, 1fr);
     }
 
@@ -211,5 +275,15 @@
 
     .about-section {
         padding-block: var(--space-7);
+    }
+
+    .about-experience-card {
+        gap: var(--space-4);
+        padding-block: var(--space-5);
+    }
+
+    .about-experience-details {
+        padding-left: 0;
+        border-left: 0;
     }
 }
