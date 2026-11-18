@@ -17,6 +17,33 @@ if (heroTitleTrigger && heroSoundEffect) {
     });
 }
 
+document.querySelectorAll(".case-study-video-frame[data-youtube-video]").forEach((videoFrame) => {
+    const videoTrigger = videoFrame.querySelector(".case-study-video-trigger");
+
+    if (!videoTrigger) {
+        console.warn("Unable to initialize the YouTube video because its play button is missing.");
+        return;
+    }
+
+    videoTrigger.addEventListener("click", () => {
+        const videoId = videoFrame.dataset.youtubeVideo;
+
+        if (!videoId || !/^[\w-]{11}$/.test(videoId)) {
+            console.warn("Unable to play the video because its YouTube ID is invalid.");
+            return;
+        }
+
+        const player = document.createElement("iframe");
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0`;
+        player.title = "Charter Spectrum UI refresh video";
+        player.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        player.allowFullscreen = true;
+        player.referrerPolicy = "strict-origin-when-cross-origin";
+
+        videoFrame.replaceChildren(player);
+    });
+});
+
 let savedTheme = null;
 
 try {

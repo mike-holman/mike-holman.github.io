@@ -60,6 +60,7 @@
     padding-block: var(--space-8);
 }
 
+.about-experience-section,
 .about-tools-section {
     width: calc(100% + var(--space-4) + var(--space-4));
     flex-shrink: 0;
