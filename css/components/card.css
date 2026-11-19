@@ -13,18 +13,25 @@
     background: var(--colour-surface-card);
 }
 
-.featured-work-section .work-grid {
+.featured-work-section .work-grid--two {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: var(--space-6);
 }
 
-.featured-work-section .work-grid > .project-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc(50% - var(--space-3));
+.featured-work-section .work-grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .section-header {
     margin-bottom: var(--space-6);
+}
+
+.section-header > * {
+    margin: 0;
+}
+
+.section-header .caption {
+    margin-bottom: var(--space-3);
 }
 
 /* Work Grid - Responsive 3 Column Layout */
@@ -243,14 +250,17 @@
     aspect-ratio: 2 / 1;
 }
 
-@media (max-width: 768px) {
-    .featured-work-section .work-grid {
+@media (max-width: 900px) {
+    .featured-work-section .work-grid--two,
+    .featured-work-section .work-grid--three {
         grid-template-columns: 1fr;
     }
+}
 
-    .featured-work-section .work-grid > .project-card:last-child:nth-child(odd) {
-        grid-column: auto;
-        width: 100%;
+@media (max-width: 768px) {
+    .featured-work-section .work-grid--two,
+    .featured-work-section .work-grid--three {
+        grid-template-columns: 1fr;
     }
 
     .home-page > .hero-section,
