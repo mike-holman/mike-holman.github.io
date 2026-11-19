@@ -221,6 +221,33 @@
     grid-column: 2;
 }
 
+.about-cta-banner {
+    display: grid;
+    gap: var(--space-6);
+    padding: var(--space-8);
+    background: var(--colour-surface);
+    border: 1px solid var(--colour-border);
+    border-radius: var(--radius-xl);
+}
+
+.about-cta-message > * {
+    margin: 0;
+}
+
+.about-cta-message .caption {
+    margin-bottom: var(--space-3);
+}
+
+.about-cta-message .title-2 {
+    max-width: 36ch;
+}
+
+.about-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
 @media (max-width: 900px) {
     .about-hero-grid {
         grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
@@ -276,6 +303,10 @@
 
     .about-section {
         padding-block: var(--space-7);
+    }
+
+    .about-cta-banner {
+        padding: var(--space-5);
     }
 
     .about-experience-card {

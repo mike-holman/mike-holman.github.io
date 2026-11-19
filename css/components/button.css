@@ -7,6 +7,7 @@
   font-weight: var(--weight-semibold);
   border: none;
   border-radius: var(--radius-lg);
+  text-decoration: none;
 
   cursor: pointer;
 }
@@ -26,6 +27,10 @@
 .btn-primary {
   background: var(--colour-primary);
   color: white;
+}
+
+:root[data-theme="dark"] .btn-primary {
+  color: #17191c;
 }
 
 .btn-primary:hover {
